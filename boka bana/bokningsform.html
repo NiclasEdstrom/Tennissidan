@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LK-Tennis</title>
+<meta charset="utf-8">
+<meta name="viewport" content="widht=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/575492c50e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="/Boka Bana/bokningsform.css"> 
+
+</head>
+
+
+<body>
+  <header>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    
+    <ul>
+      
+      <div class="active">
+      <li><a href="/index.html">Hem</a></li> 
+      <li><a href="/Header/Om.html">Om</a></li>
+      <li><a href="/Header/kontakt.html" target="main">Kontakt</a></li>
+      <li><a href="/Header/Öppettider.html">Öppettider</a></li>
+      <li><a href="/Header/Följoss.html">Följ oss</a></li>
+      <li><a href="/Header/Loginformulär.html">Bli Medlem</a></li>
+      </div>
+      </ul>
+      <div class="bollenlogo"></div>
+        <li><a href="/Index.html">
+        <img src="/logo/bollen1.png" alt="tennis" style="width:42px;height:42px;"></a>
+      </div>
+    </ul>
+  </nav>
+</header>
+
+  
+
+  <body>
+   <div class="main_container">
+      <div class="formbokning">
+        <div class="form-text">
+          <h1><span>TennisKlubben AB</span></h1>
+          <p>Välkommen att boka din bana!</p>
+        </div>
+        <div class="main-form">
+            <form id="form" action="/boka bana/bokningklar.html">
+        <div>
+            <span>Namn och Efternamn:</span>
+            <input type="text" name="name" id="name" placeholder="Skriv in ditt namn här..." required>
+        </div>
+        <div>
+            <span>Email:</span>
+            <input type="email" name="email" id="email" placeholder="Skriv in din mail här..." required>
+        </div>
+        <div>
+            <span>Hur många är ni?</span>
+            <select name="people" id="people" placeholder="Välj hur många ni är..">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div>
+          <span>Välj tid:</span>
+          <select name="time" id="time" placeholder="Välj Tid..." required>
+            <option value="8:00-9:00">8:00-9:00</option>
+            <option value="9:00-10:00">9:00-10:00</option>
+            <option value="10:00-11:00">10:00-11:00</option>
+            <option value="11:00-12:00">11:00-12:00</option>
+            <option value="13:00-14:00">13:00-14:00</option>
+            <option value="14:00-15:00">14:00-15:00</option>
+            <option value="15:00-16:00">15:00-16:00</option>
+            <option value="16:00-17:00">16:00-17:00</option>
+        </select>
+        </div>
+        <div>
+            <span>När vill du boka?</span>
+            <input type="date" name="date" id="date" placeholder="Datum" required>
+        </div>
+        <div>
+            <span>Telefonnummer</span>
+            <input type="number" name="number" id="number" placeholder="Skriv in ditt nummer här.."required>
+        </div>
+        <div id="submit">
+        
+          <input type="submit" value="Boka" onclick="passvalues()"/>
+       </div> 
+      </div>
+     </div>    
+    </form>
+
+
+ <script>
+  function passvalues()
+  {
+    
+      var name=document.getElementById("name").value;
+      var email=document.getElementById("email").value;
+      var people=document.getElementById("people").value;
+      var time=document.getElementById("time").value;
+      var date=document.getElementById("date").value;
+      var number=document.getElementById("number").value;
+      
+      localStorage.setItem("namevalue", name);
+      localStorage.setItem("emailvalue", email);
+      localStorage.setItem("peoplevalue", people);
+      localStorage.setItem("timevalue", time);
+      localStorage.setItem("datevalue", date);
+      localStorage.setItem("numbervalue", number);
+      return false;
+  }
+ </script>
+ 
+
+  </body>
+  </html>

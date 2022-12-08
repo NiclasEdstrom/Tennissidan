@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+
+
+body {
+    background-image: url(/Logo/tennis1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: wrap;
+    background-size: 200vh;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url(/Logo/tennis1.jpg)
+    
+  }
+      /* <------------------------------------------HEADER-------------------------------------> */
+    * {
+      margin: 0;
+      padding: 0;
+      
+  }   
+  
+  nav{
+    background: #004417;
+    height: 50px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: wrap;
+    background-size: cover;
+    background-color: black;
+    
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.20;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    
+  }
+  
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  header ul li a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 40px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 10px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 17px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+
+  .main_container {
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    
+    
+  }
+
+  .formbokning {
+    width: 700px;
+    background-color: grey;
+    border: 2px;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+  );
+  }
+
+  .form-text {
+    text-align: center;
+    margin: 40px 0;
+    
+    
+  }
+  
+  .form-text h1 {
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-decoration-line:overline;
+   
+  }
+
+  .form-text p {
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    font-size: x-large;
+    
+
+
+  }
+  .main-form {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .main-form div {
+    margin: 10px 20px;
+    width: 300px;
+    display: inline-block;
+  }
+  .main-form div input {
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    background: none;
+    border: 1px solid #ffca00;
+    font-size: 20px;
+    color: red;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+  }
+  .main-form div select {
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    background: none;
+    border: 1px solid #ffca00;
+    font-size: 20px;
+    color: red;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+    
+  }
+
+  .main-form div span {
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    color: black;
+    font-size: 25px;
+    
+  }
+
+  #submit {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    
+    
+  }
+
+  #submit input{
+    width: 200px;
+    font-family: 'Merriweather', serif;
+    background-color:yellow;
+    color: black; 
+    transition: all .3s;
+  }
+
+  #submit input:hover{
+    width: 200px;
+    font-family: 'Merriweather', serif;
+    background-color: black;
+    color: white;
+  }
+
+  #submit input:active{
+    font-size: 19px;
+    background-color: rgb(46, 20, 5);
+    color: white;
+  }
+
+  @media screen and (max-width:710px) {
+    .main-form {
+      text-align: center;
+    }
+  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Kontakt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/575492c50e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+
+</head>
+
+<header>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    
+    <ul>
+      
+      <div class="active">
+      <li><a href="/index.html">Hem</a></li> 
+      <li><a href="/Header/Om.html">Om</a></li>
+      <li><a href="/Header/kontakt.html" target="main">Kontakt</a></li>
+      <li><a href="/Header/Öppettider.html">Öppettider</a></li>
+      <li><a href="/Header/Följoss.html">Följ oss</a></li>
+      <li><a href="/Header/Loginformulär.html">Bli Medlem</a></li>
+      </div>
+      </ul>
+      <div class="bollenlogo"></div>
+        <li><a href="/Index.html">
+        <img src="/logo/bollen1.png" alt="tennis" style="width:42px;height:42px;"></a>
+      </div>
+    </ul>
+  </nav>
+
+
+</header>
+
+
+<body>
+
+
+    <div class="container-form">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>Kontakta oss!</h3>
+        <input type="text" id="name" placeholder="Namn" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Telefonnummer" required>
+        <textarea id="message" rows="4" placeholder="Hur kan vi hjälpa dig?"></textarea>
+        <div class="formbotton">
+        <button type="Submit">Skicka</button>
+      </div>
+      </form>
+
+
+
+
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "teamflytwest@gmail.com",
+            Password : "",
+            To : 'teamflytwest@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enquiry",
+            Body : "And this is the body"
+          }).then(
+          message => alert(message)
+          );  
+      }
+
+    </script>
+
+</body>
+
+</html>

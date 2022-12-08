@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/575492c50e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/Header/Loginformulär.css">
+    <title>Login</title>
+</head>
+<header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        
+        <ul>
+          
+          <div class="active">
+          <li><a href="/index.html">Hem</a></li>  
+          <li><a href="/Header/Om.html">Om</a></li>
+          <li><a href="/Header/kontakt.html" target="main">Kontakt</a></li>
+          <li><a href="/Header/Öppettider.html">Öppettider</a></li>
+          <li><a href="/Header/Följoss.html">Följ oss</a></li>
+          <li><a href="/Header/Loginformulär.html">Bli Medlem</a></li>
+          </div>
+          </ul>
+          <div class="bollenlogo"></div>
+            <li><a href="/Index.html">
+            <img src="/logo/bollen1.png" alt="tennis" style="width:42px;height:42px;"></a>
+          </div>
+        </ul>
+      </nav>
+</header>
+
+<body>
+    
+    <div class="container">
+        <form id="Form1">
+            <h3>Skapa Konto</h3>
+            <input type="text" placeholder="Email" required>
+            <input type="password" placeholder="Lösenord" required>
+            <input type="password" placeholder="Upprepa Lösenord" required>
+             
+            <div class="btn-box">
+                <button type="button" id="Next1">Nästa</button>
+        </div>
+        </form>
+        <form id="Form2">
+            <h3>Personlig information</h3>
+            <input type="text" placeholder="Namn" required>
+            <input type="text" placeholder="Efternamn"required>
+            <input type="text" placeholder="Telefonnummer"required> 
+
+            
+             
+            <div class="btn-box">
+                <button type="button" id="Back1">Bakåt</button>
+                <button type="button" id="Next2">Nästa</button>
+        </div>
+        </form>
+        <form id="Form3">
+            <h3>Adress information</h3>
+            <input type="text" placeholder="Adress"required>
+            <input type="text" placeholder="Stad"required>
+            <input type="text" placeholder="Postnummer"required>
+
+            
+             
+            <div class="btn-box">
+                <div class="bakåtknapp">
+                    <button type="button" id="Back2">Bakåt</button></div>
+                    <div class="startknapp">
+                      <a href="/blimedlem.html">Boka</a></div>
+        </div>
+        </form>
+     
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+            
+
+            </div>
+
+            <script src="/header/loginformulär.js"></script>
+
+        </body>
+        </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Bekräftelse</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/575492c50e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/boka bana/bokningklar.css">
+
+</head>
+
+
+<body>
+  <header>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>s
+    </label>
+    
+    <ul>
+      
+      <div class="active">
+      <li><a href="/index.html">Hem</a></li> 
+      <li><a href="/Header/Om.html">Om</a></li>
+      <li><a href="/Header/kontakt.html" target="main">Kontakt</a></li>
+      <li><a href="/Header/Öppettider.html">Öppettider</a></li>
+      <li><a href="/Header/Följoss.html">Följ oss</a></li>
+      <li><a href="/Header/Loginformulär.html">Bli Medlem</a></li>
+      </div>
+      </ul>
+      <div class="bollenlogo"></div>
+        <li><a href="/Index.html">
+        <img src="/logo/bollen1.png" alt="tennis" style="width:42px;height:42px;"></a>
+      </div>
+    </ul>
+  </nav>
+</header>
+
+  <div class="container">
+    
+    <form id="Form4">
+
+       <div class="btn-box1">
+        
+          <div class="checkmark">
+            <img src="/Logo/approved.png" alt="tennis" style="width:80px;height:80px;"></img></div>
+        <div class="startknapp">
+        <a href="/Index.html">Startsidan</a></div>
+    </div>
+    <a href="/Index.html">
+    <div class="step-col1"><small>TennisKlubben AB</small></div></a>
+    </form>
+ 
+    <div class="step-row1">
+    <div id="progress1"></div>
+    </div>
+
+  <h3>Tack för din bokning!</h3>
+  <div class="result">
+    <p><span id="result1"></span><br></p>
+    <p><span id="result2"></span><br></p>
+    <p>Personer: <span id="result3"></span><br></p>
+    <p>Tid: <span id="result4"></span><br></p>
+    <p>Datum: <span id="result5"></span><br></p>
+    <p>Telefon: <span id="result6"></span></p>
+  </div>
+  
+  <script>
+    document.getElementById("result1").innerHTML=localStorage.getItem("namevalue");
+    document.getElementById("result2").innerHTML=localStorage.getItem("emailvalue");
+    document.getElementById("result3").innerHTML=localStorage.getItem("peoplevalue");
+    document.getElementById("result4").innerHTML=localStorage.getItem("timevalue");
+    document.getElementById("result5").innerHTML=localStorage.getItem("datevalue");
+    document.getElementById("result6").innerHTML=localStorage.getItem("numbervalue");
+    
+  </script>
+    
+
+    
+    
+   
+
+   
+   
+      
+        
+</body>
+</form>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Kontakt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/575492c50e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/Header/Loginformulär.css">
+
+</head>
+
+
+
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      
+      <ul>
+        
+        <div class="active">
+        <li><a href="/index.html">Hem</a></li> 
+        <li><a href="/Header/Om.html">Om</a></li>
+        <li><a href="/Header/kontakt.html" target="main">Kontakt</a></li>
+        <li><a href="/Header/Öppettider.html">Öppettider</a></li>
+        <li><a href="/Header/Följoss.html">Följ oss</a></li>
+        <li><a href="/Header/Loginformulär.html">Bli Medlem</a></li>
+        </div>
+        </ul>
+        <div class="bollenlogo"></div>
+          <li><a href="/Index.html">
+          <img src="/logo/bollen1.png" alt="tennis" style="width:42px;height:42px;"></a>
+        </div>
+      </ul>
+    </nav>
+  
+  <div class="container">
+    
+    <form id="Form1">
+      
+      <h3>Personlig information</h3>
+        <input type="text" placeholder="Namn"requierd>
+        <input type="text" placeholder="Efternamn"requierd>
+        <input type="text" placeholder="Telefonnummer"requierd> 
+
+        <div class="btn-box">
+            <button type="button" id="Next1">Nästa</button>
+    </div>
+    </form>
+    
+       <form id="Form2">
+        
+        <h3>Boka Bana</h3>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <div style="margin-top: 45px;">
+      <label for="bana1" style="display:block;
+      margin: 0.5rem 0; ">
+        <input type="radio" id="bana1" name="bana" value="bana" style="width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle; float:left" >Enkelbana</label>
+      <label for="bana2">Dubbelbana
+        <input type="radio" id="bana2" name="bana" value="bana" style="width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle; float:left" ></label>
+      </div>
+          
+        <div class="btn-box">
+            <button type="button" id="Back1">Bakåt</button>
+            <button type="button" id="Next2">Nästa</button>
+    </div>
+    </form>
+    
+    <form id="Form3">
+      
+      
+        <h3>Boka Omklädningsrum</h3>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="text" placeholder="Herr eller dam?">
+        <div class="bokatext">
+        <label for="boka"style="padding-top: 10px;">Inget omklädningsrum</label></div>
+        <div class="checkbox">
+        <input type="checkbox" id="boka" name="boka" value="boka"></div>
+        
+            <div class="bakåtknapp">
+            <button type="button" id="Back2">Bakåt</button></div>
+            <div class="startknapp">
+              <a href="/Boka Bana/bekräfta.html">Boka</a></div>
+    </form>
+ 
+    <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Sida 1</small></div>
+        <div class="step-col"><small>Sida 2</small></div>
+        <div class="step-col"><small>Sida 3</small></div>
+        
+
+        </div>
+        
+        
+        <script src="/header/loginformulär.js"></script>
+</body>
